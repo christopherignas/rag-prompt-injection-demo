@@ -7,7 +7,7 @@ Maps to **OWASP LLM Top 10 — LLM01: Prompt Injection** and is the canonical su
 ---
 
 ## The attack in 30 seconds
-
+![Before](docs/screenshots/01-baseline-output.png)
 ```
 USER  >>  What is your refund policy?
 
@@ -85,7 +85,7 @@ Each example takes a few seconds and a handful of API tokens (~$0.01 to run all 
 ---
 
 ## How the attack works (walkthrough)
-
+![Hijacked agent response](docs/screenshots/02-attack-hijacked.png)
 ### The setup
 
 We're simulating a customer support AI that retrieves from two sources:
@@ -130,7 +130,7 @@ That's the failure. Run `python -m examples.02_attack` to see it for yourself.
 ---
 
 ## How the defenses work
-
+![Defense agent response](docs/screenshots/03-defense-blocked.png)
 `src/defenses.py` implements two layers, both of which are real techniques used in production AI security work.
 
 ### Layer 1: Spotlighting (Microsoft Research, 2024)
