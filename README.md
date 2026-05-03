@@ -204,4 +204,4 @@ The demo intentionally stops short of production — the goal is the underlying 
 
 **Christopher Ignas** — Security Engineer focused on AI Security. Founder of [DefyneAI](https://defyneai.com), an AI/automation consulting practice. PNPT-certified, M.S. in Cybersecurity in progress. Currently pursuing the HTB Certified Offensive AI Expert (COAE) credential.
 
-[LinkedIn](https://linkedin.com/in/christopherignas) · [GitHub](https://github.com/christopherignas) · [DefyneAI](https://defyneai.com)
+[LinkedIn](https://linkedin.com/in/christopherignas) · [GitHub](https://github.com/christopherignas)
