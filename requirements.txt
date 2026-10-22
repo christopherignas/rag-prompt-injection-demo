@@ -2,3 +2,5 @@ openai>=1.50.0
 numpy>=1.26.0
 scikit-learn>=1.4.0
 python-dotenv>=1.0.0
+# GHSA-hq85-5cpj-mr62: drop compromised eMudhra/emSign CAs
+certifi>=2026.10.19

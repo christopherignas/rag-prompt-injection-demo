@@ -64,11 +64,14 @@ No LangChain. No LlamaIndex. No vector DB infrastructure. Direct OpenAI API call
 
 ## Quick start
 
+Use Python 3.12 or later (`.python-version`). Python 3.9 and 3.10 bundle a vulnerable pip. After you create the venv, upgrade pip and certifi before installing project dependencies. This repo requires **pip>=26.2.2** (and **certifi>=2026.10.19**, pinned in `requirements.txt`) because of the October 2026 eMudhra/emSign CA incident ([GHSA-hq85-5cpj-mr62](https://github.com/advisories/GHSA-hq85-5cpj-mr62)). Older pip keeps trusting the compromised intermediates from its vendored CA bundle, including when talking to `pypi.org`.
+
 ```bash
 git clone https://github.com/christopherignas/rag-prompt-injection-demo
 cd rag-prompt-injection-demo
 
 python -m venv .venv && source .venv/bin/activate
+python -m pip install --upgrade pip certifi
 pip install -r requirements.txt
 
 cp .env.example .env
